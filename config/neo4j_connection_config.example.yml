@@ -1,0 +1,37 @@
+# ============================================================
+# Neo4j connection — EXAMPLE / 示例
+# ------------------------------------------------------------
+# Copy this file, remove the ".example" from the name, and place it
+# where your graph scripts expect it (mirror your real config/ path).
+# 复制本文件，去掉文件名里的 ".example"，放到你的图脚本期望的位置
+# （与你真实的 config/ 路径保持一致）。
+#
+# SECURITY / 安全:
+#   Do NOT put your real password in this file in a public repo.
+#   不要把真实密码写进公开仓库里的文件。
+#   The scripts resolve the password in this priority order:
+#   脚本按以下优先级解析密码：
+#     1. --password  (command-line argument / 命令行参数)
+#     2. NEO4J_PASSWORD  (environment variable / 环境变量)  ← recommended
+#     3. the `password:` field below / 下面的 password 字段
+# ============================================================
+
+connection:
+  # Default local Neo4j address. Change if your instance differs.
+  # 本地 Neo4j 默认地址，如不同请修改。
+  uri: "bolt://localhost:7687"
+
+  # Default Neo4j username.
+  # Neo4j 默认用户名。
+  user: "neo4j"
+
+  # Leave password UNSET here and provide it via the NEO4J_PASSWORD
+  # environment variable (or --password). Uncomment ONLY for local,
+  # private, throwaway setups — never in a public repo.
+  # 这里**不要**填密码，改用 NEO4J_PASSWORD 环境变量（或 --password）。
+  # 仅本地私有的临时环境才取消注释，公开仓库里永远别填。
+  # password: "your-neo4j-password"
+
+  # Target database name (Neo4j default is "neo4j").
+  # 目标数据库名（Neo4j 默认为 "neo4j"）。
+  database: "neo4j"

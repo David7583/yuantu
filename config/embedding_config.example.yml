@@ -1,0 +1,41 @@
+# ============================================================
+# Embedding configuration — EXAMPLE / 示例
+# ------------------------------------------------------------
+# Copy this file, remove ".example" from the name, and place it where
+# your embedding scripts expect it (mirror your real config/ path).
+# 复制本文件，去掉文件名里的 ".example"，放到嵌入脚本期望的位置。
+#
+# Two backends are supported. Set backend.type accordingly.
+# 支持两种后端，用 backend.type 选择。
+# ============================================================
+
+# Local backend uses sentence-transformers; API backend calls an
+# OpenAI-compatible /embeddings endpoint (e.g. vLLM, Infinity).
+# 本地后端走 sentence-transformers；API 后端调 OpenAI 兼容的
+# /embeddings 接口（如 vLLM、Infinity）。
+backend:
+  type: "local"             # "local" or "api"
+  model_name: "BAAI/bge-m3"
+  device: "cpu"             # "cpu" or "cuda"
+  encode_batch_size: 4
+
+# Only used when backend.type == "api".
+# 仅当 backend.type == "api" 时使用。
+api:
+  endpoint: "http://localhost:8000/v1/embeddings"   # your endpoint / 你的接口地址
+  # NAME of the env var that holds the API token — NOT the token itself.
+  # 这里写**环境变量的名字**，不是 token 本身。脚本会去读这个环境变量。
+  auth_token_env: "EMBEDDING_API_TOKEN"
+  timeout: 120
+
+# Model identity recorded with the vectors (used for auditing).
+# 与向量一同记录的模型身份信息（用于审计）。
+model:
+  name: "BAAI/bge-m3"
+  dimension: 1024
+  version: "v1.0"
+  tokenizer_version: "unknown"
+  policy_version: "v0001"
+
+runtime:
+  batch_size: 100
