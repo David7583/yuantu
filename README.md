@@ -99,7 +99,7 @@ Implementation was carried out with the help of large language models, but every
 
 ## Contact
 
-Questions or collaboration welcome — *[your email]*.
+Questions or collaboration welcome — *1138133645@qq.com; y23666176@gmail.com*.
 
 ## License
 
