@@ -1,7 +1,7 @@
 # Yuantu (源图)
 ### Traceable Hybrid Retrieval Knowledge Base
 
-
+*Read this in [中文](README.zh-CN.md).*
 
 > A governed, traceable knowledge layer that runs hybrid retrieval — semantic, factual, relational, and locational — over immutable source data. Built for settings where every conclusion must be traceable to its origin, such as policy analysis and interview research.
 
@@ -99,7 +99,7 @@ Implementation was carried out with the help of large language models, but every
 
 ## Contact
 
-Questions or collaboration welcome — y23666176@gmail.com ; 1138133645@qq.com.
+Questions or collaboration welcome — *[your email]*.
 
 ## License
 
