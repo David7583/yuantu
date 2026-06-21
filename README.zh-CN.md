@@ -99,7 +99,7 @@ pip install pyyaml neo4j duckdb chromadb sentence-transformers
 
 ## 联系
 
-欢迎就可溯源、长期维护，以及高风险场景下对 agent 的约束等问题交流 —— *[你的邮箱]*。
+欢迎就可溯源、长期维护，以及高风险场景下对 agent 的约束等问题交流 —— *1138133645@qq.com; y23666176@gmail.com*。
 
 ## 许可证
 
